@@ -55,6 +55,7 @@ class Price(models.Model):
     price = models.CharField(max_length=256, verbose_name='Цена от')
     price_includes = models.TextField(verbose_name='В стоимость входит')
     price_not_include = models.TextField(verbose_name='В стоимость не входит')
+    photo = models.ImageField(upload_to='photos/', verbose_name='Фото на главной странице')
 
     class Meta:
         verbose_name = 'Цена'
