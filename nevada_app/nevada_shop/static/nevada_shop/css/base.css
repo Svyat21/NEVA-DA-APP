@@ -1,3 +1,4 @@
+/* Обнуление */
 *,
 *::before,
 *::after{
@@ -37,6 +38,21 @@ body{
     font-size: 18px;
     line-height: 25px;
 }
+
+
+/* Глобальные стили */
+
+.h1_main{
+    font: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+
+/* Главные контейнеры */
+
 .main_wraper{
     height: 100%;
     max-width: 1180px;
@@ -57,6 +73,10 @@ body{
 .container_footer{
     min-width: 100%;
 }
+
+
+/* Навбар */
+
 .nav{
     height: 80px;
     display: flex;
@@ -94,6 +114,10 @@ body{
     font-size: 16px;
     line-height: 22px;
 }
+
+
+/* Интро */
+
 .intro_contain{
     margin-top: 104px;
     height: 576px;
@@ -154,7 +178,59 @@ body{
 }
 
 
+/* О нас */
 
+.about_contain{
+    display: flex;
+    justify-content: space-between;
+    height: 1243px;
+    margin-top: 250px;
+    border-top: 1px inset white;
+    border-bottom: 1px inset white;
+}
+.about_left .h1_main{
+    margin-top: 80px;
+}
+.about_right{
+    position: relative;
+    width: 799px;
+    border-left: 1px inset white;
+    border-right: 1px inset white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_photo{
+    width: 720px;
+    height: 695px;
+    margin-top: 80px;
+}
+.about_text{
+    width: 720px;
+    margin-top: 51px;
+}
+.about_text p{
+    margin-bottom: 20px;
+}
+.more_button{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/details_before.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px inset white;
+    border-radius: 50px;
+    transition: all 0.2s linear;
+}
+.more_button:hover{
+    background-image: url(../images/details_after.svg);
+}
+
+
+/* Футер */
 
 .footer{
     height: 119px;
