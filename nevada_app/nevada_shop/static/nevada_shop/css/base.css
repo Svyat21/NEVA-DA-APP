@@ -49,6 +49,12 @@ body{
     font-size: 64px;
     line-height: 77px;
 }
+.p_bold{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
 
 
 /* Главные контейнеры */
@@ -227,6 +233,39 @@ body{
 }
 .more_button:hover{
     background-image: url(../images/details_after.svg);
+}
+
+
+/* Репертуар */
+
+.repertoire_contain{
+    margin-top: 250px;
+}
+.repertoire_body{
+    margin-top: 50px;
+    border-top: 1px inset white;
+}
+.repertoire_element{
+    border-bottom: 1px inset white;
+}
+.repertoire_genre{
+    min-height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.find_buttom{
+    width: 120px;
+    background-image: url(../images/find_before.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+.repertoire_content{
+    display: grid;
+}
+.repertoire_content p{
+    margin-bottom: 20px;
 }
 
 
