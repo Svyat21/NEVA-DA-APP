@@ -1,0 +1,20 @@
+<div class="repertoire_contain">
+    <h1 class="h1_main">Репертуар</h1>
+    <div class="repertoire_body">
+        {% for element in genre %}
+            <div class="repertoire_element">
+                <div class="repertoire_genre">
+                    <p class="p_bold">{{ element.name }}</p>
+                    <div class="find_buttom">
+                        <p class="p_bold">узнать</p>
+                    </div>
+                </div>
+                <div class="repertoire_content">
+                    {% for el in element.repertoire_set.all %}
+                        <p>{{ el.name }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
