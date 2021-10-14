@@ -10,9 +10,55 @@
     <link type="text/css" rel="stylesheet" href="{% static 'nevada_shop/css/base.css' %}">
 </head>
 <body>
-    <div>
-        {% block content %}
-        {% endblock %}
+<div class="main_wraper">
+    <div class="wrapper">
+        <div class="container">
+            <div class="nav">
+                <h1 class="logo">NEVA-DA</h1>
+                <div class="nav_linc">
+                    <a href="#">О нас</a>
+                    <a href="#">Репертур</a>
+                    <a href="#">Видео</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Райдер</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <a class="tel" href="#">+7 905 212 23 20</a>
+            </div>
+        </div>
+        <div class="container_center">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div class="container_footer">
+            <footer class="footer">
+                <div class="foter_left">
+                    <div class="footer_design">
+                        <p>Дизайн - Андрей Вервайн</p>
+                        <p>Все права защищены ©</p>
+                    </div>
+                    <div class="footer_nav">
+                        <a href="#">О нас</a>
+                        <a href="#">Репертур</a>
+                        <a href="#">Видео</a>
+                        <a href="#">Цены</a>
+                        <a href="#">Райдер</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                    <div class="footer_contacts">
+                        <p>Олеся Невская</p>
+                        <a class="tel" href="">+7 905 212 23 20</a>
+                    </div>
+                </div>
+                <div class="foter_right">
+                    <div class="youtube" href="#"></div>
+                    <div class="vk" href="#"></div>
+                    <div class="insta" href="#"></div>
+                    <div class="telegram" href="#"></div>
+                </div>
+            </footer>
+        </div> 
     </div>
+</div>
 </body>
 </html>
