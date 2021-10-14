@@ -37,6 +37,162 @@ body{
     font-size: 18px;
     line-height: 25px;
 }
+.main_wraper{
+    height: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
 .wrapper{
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    min-width: 100%;
+}
+.container_center{
+    min-width: 100%;
+    flex: 1 1 auto;
+}
+.container_footer{
+    min-width: 100%;
+}
+.nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px inset white;
+}
+.logo{
+    font: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 28px;
+}
+.nav_linc{
+    width: 578px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_linc a{
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    transition: all 0.2s linear;
+}
+.nav_linc a:hover{
+    color: #A0A0A0;
+}
+.tel{
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+.intro_contain{
+    margin-top: 104px;
+    height: 576px;
+    background-image: url(../images/main_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.h1_intro{
+    font: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 116px;
+}
+.p_intro{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 101px;
+}
+.buttom{
+    padding: 11px 56px;
+    border: 1px inset white;
+    color: white;
+    transition: all 0.2s linear;
+}
+.buttom:hover{
+    color: #000307;
+    background-color: white;
+}
+.intro_bottom{
+    width: 204px;
+    display: flex;
+    justify-content: space-between;
+}
+.intro_bottom div{
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.youtube{
+    background-image: url(../images/youtubee.svg);
+}
+.vk{
+    background-image: url(../images/vk.svg);
+}
+.insta{
+    background-image: url(../images/instagram.svg);
+}
+.telegram{
+    background-image: url(../images/telegram.svg);
+}
+
+
+
+
+.footer{
+    height: 119px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px inset white;
+}
+.foter_left{
+    width: 914px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_nav{
+    width: 531px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_nav a{
+    color: white;
+    transition: all 0.2s linear;
+}
+.footer_nav a:hover{
+    color: #A0A0A0;
+}
+.foter_right{
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+}
+.foter_right div{
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
