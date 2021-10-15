@@ -1,0 +1,15 @@
+<div class="price_contain">
+    <div class="price_left">
+        <h1 class="h1_main">Цены</h1>
+    </div>
+    <div class="price_right">
+        <img class="price_photo" src="{{ price.photo.url }}">
+        <div class="price_body">
+            <h1 class="h1_standart">{{ price.price }}</h1>
+            <h1 class="h1_standart">В стоимость входит:</h1>
+            <div class="price_text">{{ price.price_includes|linebreaks }}</div>
+            <h1 class="h1_standart">В стоимость не входит:</h1>
+            <div class="price_text">{{ price.price_not_include|linebreaks }}</div>
+        </div>
+    </div>
+</div>
