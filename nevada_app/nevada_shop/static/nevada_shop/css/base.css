@@ -49,6 +49,12 @@ body{
     font-size: 64px;
     line-height: 77px;
 }
+.h1_standart{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
 .p_bold{
     font-style: normal;
     font-weight: bold;
@@ -286,6 +292,44 @@ body{
 }
 .video_contain .h1_main{
     margin-bottom: 80px;
+}
+
+
+/* Цены */
+
+.price_contain{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+    border-top: 1px inset white;
+}
+.price_left .h1_main{
+    margin-top: 80px;
+}
+.price_right{
+    position: relative;
+    width: 799px;
+    border-left: 1px inset white;
+    border-right: 1px inset white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price_photo{
+    width: 708px;
+    height: 499px;
+    margin-top: 80px;
+}
+.price_body{
+    width: 708px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.price_body .h1_standart{
+    margin-top: 37px;
+}
+.price_text{
+    margin-top: 20px;
 }
 
 
