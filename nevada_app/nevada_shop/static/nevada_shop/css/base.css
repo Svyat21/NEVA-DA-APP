@@ -279,6 +279,16 @@ body{
 }
 
 
+/* Видео */
+
+.video_contain{
+    margin-top: 250px;
+}
+.video_contain .h1_main{
+    margin-bottom: 80px;
+}
+
+
 /* Футер */
 
 .footer{
