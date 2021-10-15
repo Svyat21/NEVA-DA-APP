@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from django.views.generic import View
 from .models import Group, Team, Genre, Repertoire, Price, CommonRider, Rider
+from .forms import QuestionForm
 import logging
 
 logger = logging.getLogger(__name__)
@@ -13,11 +14,16 @@ class HomeView(View):
         genre = Genre.objects.all().prefetch_related('repertoire_set')
         price = Price.objects.filter(pk=1)[0]
         rider = CommonRider.objects.filter(pk=1)[0]
+        form = QuestionForm()
         context = {
             'title_html': 'Главная',
             'about': about,
             'genre': genre,
             'price': price,
             'rider': rider,
+            'form': form,
         }
         return render(request, 'nevada_shop/index.html', context=context)
+
+    def post(self, request):
+        return HttpResponse('ok')
