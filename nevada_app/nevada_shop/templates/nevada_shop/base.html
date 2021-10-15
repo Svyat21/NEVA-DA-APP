@@ -10,20 +10,20 @@
     <link type="text/css" rel="stylesheet" href="{% static 'nevada_shop/css/base.css' %}">
 </head>
 <body>
-<div class="main_wraper">
+<div class="main_wraper" id="up">
     <div class="wrapper">
         <div class="container">
             <div class="nav">
-                <h1 class="logo">NEVA-DA</h1>
+                <a href="{% url 'home' %}"><h1 class="logo">NEVA-DA</h1></a>
                 <div class="nav_linc">
-                    <a href="#">О нас</a>
-                    <a href="#">Репертур</a>
-                    <a href="#">Видео</a>
-                    <a href="#">Цены</a>
-                    <a href="#">Райдер</a>
-                    <a href="#">Контакты</a>
+                    <a href="#about">О нас</a>
+                    <a href="#repertoire">Репертур</a>
+                    <a href="#video">Видео</a>
+                    <a href="#price">Цены</a>
+                    <a href="#rider">Райдер</a>
+                    <a href="#contacts">Контакты</a>
                 </div>
-                <a class="tel" href="#">+7 905 212 23 20</a>
+                <a class="tel" href="tel:+79052122320">+7 905 212 23 20</a>
             </div>
         </div>
         <div class="container_center">
@@ -38,23 +38,23 @@
                         <p>Все права защищены ©</p>
                     </div>
                     <div class="footer_nav">
-                        <a href="#">О нас</a>
-                        <a href="#">Репертур</a>
-                        <a href="#">Видео</a>
-                        <a href="#">Цены</a>
-                        <a href="#">Райдер</a>
-                        <a href="#">Контакты</a>
+                        <a href="#about">О нас</a>
+                        <a href="#repertoire">Репертур</a>
+                        <a href="#video">Видео</a>
+                        <a href="#price">Цены</a>
+                        <a href="#rider">Райдер</a>
+                        <a href="#contacts">Контакты</a>
                     </div>
                     <div class="footer_contacts">
                         <p>Олеся Невская</p>
-                        <a class="tel" href="">+7 905 212 23 20</a>
+                        <a class="tel" href="tel:+79052122320">+7 905 212 23 20</a>
                     </div>
                 </div>
                 <div class="foter_right">
-                    <div class="youtube" href="#"></div>
-                    <div class="vk" href="#"></div>
-                    <div class="insta" href="#"></div>
-                    <div class="telegram" href="#"></div>
+                    <a href="https://www.youtube.com/channel/UCbB_lbM8poF-ljxWS7nFDsg" target="_blank"><div class="youtube"></div></a>
+                    <a href="https://vk.com/nevadaliveband" target="_blank"><div class="vk"></div></a>
+                    <a href="https://www.instagram.com/neva_da_band/" target="_blank"><div class="insta"></div></a>
+                    <a href="https://t.me/neva_da_band" target="_blank"><div class="telegram"></div></a>
                 </div>
             </footer>
         </div> 

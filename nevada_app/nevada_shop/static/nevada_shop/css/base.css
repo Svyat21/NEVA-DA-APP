@@ -9,6 +9,7 @@
 }
 a{
     text-decoration: none;
+    color: white;
 }
 ul,
 ol,
@@ -403,6 +404,9 @@ body{
 .contacts_text p{
     margin-top: 30px;
     margin-bottom: 145px;
+}
+.contacts_text a{
+    color: white;
 }
 .contacts_form{
     margin-top: 60px;
