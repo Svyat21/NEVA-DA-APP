@@ -77,6 +77,20 @@ body{
 .more_button:hover{
     background-image: url(../images/details_after.svg);
 }
+.up{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/up_before.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s linear;
+}
+.up:hover{
+    background-image: url(../images/up_after.svg);
+}
 
 
 /* Главные контейнеры */
@@ -359,6 +373,73 @@ body{
 }
 .rider_text p{
     margin-top: 20px;
+}
+
+
+/* Контакты */
+
+.contacts_contain{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px inset white;
+}
+.contacts_left .h1_main{
+    margin-top: 80px;
+}
+.contacts_right{
+    position: relative;
+    width: 799px;
+    border-left: 1px inset white;
+    border-right: 1px inset white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts_body{
+    margin-top: 80px;
+    width: 720px;
+    margin-bottom: 180px;
+}
+.contacts_text p{
+    margin-top: 30px;
+    margin-bottom: 145px;
+}
+.contacts_form{
+    margin-top: 60px;
+    height: 287px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input-contacts{
+    border: none;
+    padding: 5px;
+    width: 400px;
+    color: white;
+    border-bottom: 1px inset white;
+    background-color: #000307;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+.form_button{
+    width: 208px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 11px 56px;
+    border: 1px inset white;
+    color: white;
+    background-color: #000307;
+    transition: all 0.2s linear;
+}
+.form_button:hover{
+    color: #000307;
+    background-color: white;
 }
 
 
