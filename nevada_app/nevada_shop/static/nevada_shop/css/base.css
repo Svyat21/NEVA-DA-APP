@@ -61,6 +61,22 @@ body{
     font-size: 24px;
     line-height: 33px;
 }
+.more_button{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/details_before.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px inset white;
+    border-radius: 50px;
+    transition: all 0.2s linear;
+}
+.more_button:hover{
+    background-image: url(../images/details_after.svg);
+}
 
 
 /* Главные контейнеры */
@@ -224,22 +240,6 @@ body{
 .about_text p{
     margin-bottom: 20px;
 }
-.more_button{
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    width: 70px;
-    height: 70px;
-    background-image: url(../images/details_before.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px inset white;
-    border-radius: 50px;
-    transition: all 0.2s linear;
-}
-.more_button:hover{
-    background-image: url(../images/details_after.svg);
-}
 
 
 /* Репертуар */
@@ -329,6 +329,35 @@ body{
     margin-top: 37px;
 }
 .price_text{
+    margin-top: 20px;
+}
+
+
+/* Райдер */
+
+.rider_contain{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px inset white;
+}
+.rider_left .h1_main{
+    margin-top: 80px;
+}
+.rider_right{
+    position: relative;
+    width: 799px;
+    border-left: 1px inset white;
+    border-right: 1px inset white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rider_body{
+    margin-top: 80px;
+    width: 720px;
+    margin-bottom: 140px;
+}
+.rider_text p{
     margin-top: 20px;
 }
 
