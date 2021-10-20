@@ -5,6 +5,6 @@
     <div class="about_right">
         <img class="about_photo" src="{{ about.photo.url }}">
         <div class="about_text">{{ about.description|linebreaks }}</div>
-        <div class="more_button"></div>
+        <a href="{% url 'about' %}"><div class="more_button"></div></a>
     </div>
 </div>
