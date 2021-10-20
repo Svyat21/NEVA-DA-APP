@@ -4,7 +4,7 @@ from .models import Group, Team, Genre, Repertoire, Price, CommonRider, Rider
 from .forms import QuestionForm
 import logging
 
-logger = logging.getLogger(__name__)
+# logger = logging.getLogger(__name__)
 
 
 class HomeView(View):
@@ -27,3 +27,14 @@ class HomeView(View):
 
     def post(self, request):
         return HttpResponse('ok')
+
+
+class AboutView(View):
+
+    def get(self, request):
+        team = Team.objects.all()
+        context = {
+            'title_html': 'О нас',
+            'team': team,
+        }
+        return render(request, 'nevada_shop/about_team.html', context=context)
