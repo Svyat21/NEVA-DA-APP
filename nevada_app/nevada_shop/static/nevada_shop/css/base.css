@@ -447,6 +447,38 @@ body{
 }
 
 
+/* Наша команда */
+.team_contain{
+    margin-bottom: 170px;
+}
+.team_body{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.team_photo{
+    width: 800px;
+    height: 1100px;
+    object-fit: cover;
+}
+.team_description{
+    max-width: 300px;
+}
+.team_description h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.team_description p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
 /* Футер */
 
 .footer{
