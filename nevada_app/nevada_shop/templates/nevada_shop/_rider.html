@@ -7,6 +7,6 @@
             <h1 class="h1_standart">{{ rider.name }}</h1>
             <div class="rider_text">{{ rider.description|linebreaks }}</div>
         </div>
-        <div class="more_button"></div>
+        <a href="{% url 'rider' %}"><div class="more_button"></div></a>
     </div>
 </div>
