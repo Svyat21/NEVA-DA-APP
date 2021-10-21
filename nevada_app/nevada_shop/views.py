@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from django.views.generic import View
-from .models import Group, Team, Genre, Repertoire, Price, CommonRider, Rider
+from .models import Group, Team, Genre, Price, CommonRider, Rider
 from .forms import QuestionForm
 import logging
 
@@ -38,3 +38,14 @@ class AboutView(View):
             'team': team,
         }
         return render(request, 'nevada_shop/about_team.html', context=context)
+
+
+class RiderView(View):
+
+    def get(self, request):
+        rider = Rider.objects.all()
+        context = {
+            'title_html': 'О нас',
+            'rider': rider,
+        }
+        return render(request, 'nevada_shop/full_rider.html', context=context)
