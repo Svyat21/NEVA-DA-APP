@@ -448,6 +448,7 @@ body{
 
 
 /* Наша команда */
+
 .team_contain{
     margin-bottom: 170px;
 }
@@ -476,6 +477,62 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
+}
+
+
+/* Полный райдер */
+
+.rider_full_contain{
+    display: flex;
+    justify-content: space-between;
+}
+.rider_full_left .h1_main{
+    margin-top: 80px;
+}
+.rider_full_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 798px;
+    border-left: 1px inset white;
+    border-right: 1px inset white;
+    border-bottom: 1px inset white;
+    padding-bottom: 80px;
+}
+.rider_full_body{
+    max-width: 720px;
+    margin-bottom: 20px;
+}
+.rider_full_body .h1_standart{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.rider_bottom{
+    text-align: end;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.rider_bottom:hover{
+    color: #A0A0A0;
+    text-align: end;
+    text-decoration-line: underline;
+}
+.text_rider_min{
+    position: relative;
+}
+.text_rider_min p{
+    margin-bottom: 20px;
+}
+.text_rider p{
+    margin-bottom: 20px;
+}
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    background: linear-gradient(
+0deg, #000307 9.17%, rgb(0 3 7 / 0%) 100%);
 }
 
 
