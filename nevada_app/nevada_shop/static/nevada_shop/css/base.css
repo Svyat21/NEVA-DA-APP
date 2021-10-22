@@ -500,6 +500,7 @@ body{
     padding-bottom: 80px;
 }
 .rider_full_body{
+    position: relative;
     max-width: 720px;
     margin-bottom: 20px;
 }
@@ -533,6 +534,25 @@ body{
     bottom: 0px;
     background: linear-gradient(
 0deg, #000307 9.17%, rgb(0 3 7 / 0%) 100%);
+}
+.download{
+    z-index: 3;
+    position: absolute;
+    text-decoration-line: underline;
+    color: white;
+    left: 0px;
+    bottom: -42px;
+}
+.download:hover{
+    color: #A0A0A0;
+}
+.last_div{
+    position: relative;
+    height: 160px;
+    width: 100%;
+}
+.last_div .up{
+    bottom: 0px;
 }
 
 
