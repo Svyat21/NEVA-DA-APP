@@ -73,9 +73,9 @@ class CommonRider(models.Model):
 
 class Rider(models.Model):
     name = models.CharField(max_length=256, verbose_name='Райдер')
-    photo = models.FileField(upload_to='pdf/', verbose_name='PDF-файл')
-    about_me = models.TextField(verbose_name='Краткое описание')
-    comment = models.TextField(verbose_name='Полное описание')
+    file = models.FileField(upload_to='pdf/', verbose_name='PDF-файл')
+    short_description = models.TextField(verbose_name='Краткое описание')
+    description = models.TextField(verbose_name='Полное описание')
     main_rider = models.ForeignKey('CommonRider', on_delete=models.CASCADE, verbose_name='Общий райдер')
 
     def __str__(self):
