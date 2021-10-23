@@ -1,7 +1,8 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect
 from django.views.generic import View
 from .models import Group, Team, Genre, Price, CommonRider, Rider
 from .forms import QuestionForm
+from .utils import feedback_message
 import logging
 
 # logger = logging.getLogger(__name__)
@@ -26,7 +27,10 @@ class HomeView(View):
         return render(request, 'nevada_shop/index.html', context=context)
 
     def post(self, request):
-        return HttpResponse('ok')
+        form = QuestionForm(request.POST)
+        if form.is_valid():
+            feedback_message(form.cleaned_data)
+        return redirect('home')
 
 
 class AboutView(View):
