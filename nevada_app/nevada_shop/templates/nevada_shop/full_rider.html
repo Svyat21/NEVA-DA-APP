@@ -9,21 +9,21 @@
             <div class="rider_full_body">
                 <h1 class="h1_standart">{{ rider.0.name }}</h1>
                 <div class="text_rider_min">
-                    {{ rider.0.about_me|linebreaks }}
+                    {{ rider.0.short_description|linebreaks }}
                     <div class="gradient"></div>
                 </div>
-                <div class="text_rider invisible">{{ rider.0.comment|linebreaks }}</div>
+                <div class="text_rider invisible">{{ rider.0.description|linebreaks }}</div>
                 <p class="rider_bottom">Развернуть</p>
             </div>
             <div class="rider_full_body">
                 <h1 class="h1_standart">{{ rider.1.name }}</h1>
                 <div class="text_rider_min">
-                    {{ rider.1.about_me|linebreaks }}
+                    {{ rider.1.short_description|linebreaks }}
                     <div class="gradient"></div>
                 </div>
-                <div class="text_rider invisible">{{ rider.1.comment|linebreaks }}</div>
+                <div class="text_rider invisible">{{ rider.1.description|linebreaks }}</div>
                 <p class="rider_bottom">Развернуть</p>
-                <a target="_blank" class="download" href="{{ rider.0.photo.url }}">Скачать</a>
+                <a target="_blank" class="download" href="{{ rider.0.file.url }}">Скачать</a>
             </div>
         </div>
     </div>
@@ -34,30 +34,30 @@
             <div class="rider_full_body">
                 <h1 class="h1_standart">{{ rider.2.name }}</h1>
                 <div class="text_rider_min">
-                    {{ rider.2.about_me|linebreaks }}
+                    {{ rider.2.short_description|linebreaks }}
                     <div class="gradient"></div>
                 </div>
-                <div class="text_rider invisible">{{ rider.2.comment|linebreaks }}</div>
+                <div class="text_rider invisible">{{ rider.2.description|linebreaks }}</div>
                 <p class="rider_bottom">Развернуть</p>
             </div>
             <div class="rider_full_body">
                 <h1 class="h1_standart">{{ rider.3.name }}</h1>
                 <div class="text_rider_min">
-                    {{ rider.3.about_me|linebreaks }}
+                    {{ rider.3.short_description|linebreaks }}
                     <div class="gradient"></div>
                 </div>
-                <div class="text_rider invisible">{{ rider.3.comment|linebreaks }}</div>
+                <div class="text_rider invisible">{{ rider.3.description|linebreaks }}</div>
                 <p class="rider_bottom">Развернуть</p>
             </div>
             <div class="rider_full_body">
                 <h1 class="h1_standart">{{ rider.4.name }}</h1>
                 <div class="text_rider_min">
-                    {{ rider.4.about_me|linebreaks }}
+                    {{ rider.4.short_description|linebreaks }}
                     <div class="gradient"></div>
                 </div>
-                <div class="text_rider invisible">{{ rider.4.comment|linebreaks }}</div>
+                <div class="text_rider invisible">{{ rider.4.description|linebreaks }}</div>
                 <p class="rider_bottom">Развернуть</p>
-                <a target="_blank" class="download" href="{{ rider.2.photo.url }}">Скачать</a>
+                <a target="_blank" class="download" href="{{ rider.2.file.url }}">Скачать</a>
             </div>
             <div class="last_div">
                 <a href="#up"><div class="up"></div></a>
