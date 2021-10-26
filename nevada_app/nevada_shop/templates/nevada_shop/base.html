@@ -2,12 +2,8 @@
 <!doctype html>
 <html lang=ru>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% include 'nevada_shop/_links_and_meta_tags.html' %}
     <title>{{ title_html }}</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link type="text/css" rel="stylesheet" href="{% static 'nevada_shop/css/base.css' %}">
 </head>
 <body>
@@ -17,12 +13,7 @@
             <div class="nav">
                 <a href="{% url 'home' %}"><h1 class="logo">NEVA-DA</h1></a>
                 <div class="nav_linc">
-                    <a href="#about">О нас</a>
-                    <a href="#repertoire">Репертур</a>
-                    <a href="#video">Видео</a>
-                    <a href="#price">Цены</a>
-                    <a href="#rider">Райдер</a>
-                    <a href="#contacts">Контакты</a>
+                    {% include 'nevada_shop/_nav_links.html' %}
                 </div>
                 <a class="tel" href="tel:+79052122320">+7 905 212 23 20</a>
             </div>
@@ -39,12 +30,7 @@
                         <p>Все права защищены ©</p>
                     </div>
                     <div class="footer_nav">
-                        <a href="#about">О нас</a>
-                        <a href="#repertoire">Репертур</a>
-                        <a href="#video">Видео</a>
-                        <a href="#price">Цены</a>
-                        <a href="#rider">Райдер</a>
-                        <a href="#contacts">Контакты</a>
+                        {% include 'nevada_shop/_nav_links.html' %}
                     </div>
                     <div class="footer_contacts">
                         <p>Олеся Невская</p>
@@ -52,10 +38,7 @@
                     </div>
                 </div>
                 <div class="foter_right">
-                    <a href="https://www.youtube.com/channel/UCbB_lbM8poF-ljxWS7nFDsg" target="_blank"><div class="youtube"></div></a>
-                    <a href="https://vk.com/nevadaliveband" target="_blank"><div class="vk"></div></a>
-                    <a href="https://www.instagram.com/neva_da_band/" target="_blank"><div class="insta"></div></a>
-                    <a href="https://t.me/neva_da_band" target="_blank"><div class="telegram"></div></a>
+                    {% include 'nevada_shop/_social_network_links.html' %}
                 </div>
             </footer>
         </div> 
