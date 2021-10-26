@@ -3,8 +3,10 @@
         <h1 class="h1_main">О нас</h1>
     </div>
     <div class="about_right">
-        <img class="about_photo" src="{{ about.photo.url }}">
-        <div class="about_text">{{ about.description|linebreaks }}</div>
-        <a href="{% url 'about' %}"><div class="more_button"></div></a>
+        <div class="block_content_container">
+            <img class="about_photo" src="{{ about.photo.url }}">
+            <div class="about_text">{{ about.description|linebreaks }}</div>
+            <a href="{% url 'about' %}"><div class="more_button"></div></a>
+        </div>
     </div>
 </div>
