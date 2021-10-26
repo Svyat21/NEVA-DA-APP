@@ -33,7 +33,7 @@ body{
     height: 100%;
     background-color: #000307;
     color: white;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -44,7 +44,7 @@ body{
 /* Глобальные стили */
 
 .h1_main{
-    font: Russo One;
+    font-family: 'Russo One', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
@@ -173,7 +173,7 @@ body{
     justify-content: space-between;
 }
 .h1_intro{
-    font: Russo One;
+    font-family: 'Russo One', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
@@ -206,6 +206,7 @@ body{
     width: 24px;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .youtube{
     background-image: url(../images/youtubee.svg);
@@ -597,6 +598,7 @@ body{
     width: 24px;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 
