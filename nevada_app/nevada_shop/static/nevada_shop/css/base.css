@@ -646,7 +646,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    bottom: 0px;
+    top: 0px;
     background: linear-gradient(
 0deg, #000307 9.17%, rgb(0 3 7 / 0%) 100%);
 }
@@ -668,6 +668,19 @@ body{
 }
 .last_div .up{
     bottom: 0px;
+}
+@media (max-width:1200px){
+    .rider_full_right{
+        width: 67%;
+    }
+    .rider_full_body {
+        width: 94%;
+    }
+}
+@media (max-width:1000px){
+    .rider_full_left .h1_main{
+        font-size: 50px;
+    }
 }
 
 
