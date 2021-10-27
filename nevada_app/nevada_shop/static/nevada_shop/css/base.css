@@ -354,6 +354,10 @@ body{
     .repertoire_contain .h1_main {
         font-size: 50px;
     }
+    .repertoire_content p{
+        font-size: 16px;
+        font-weight: 300;
+    }
 }
 
 
