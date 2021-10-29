@@ -2,50 +2,16 @@
 
 {% block content %}
     <div class="team_contain">
-        <div class="team_body">
-            <div class="contain_team_photo">
-                <img src="{{ team.0.photo.url }}" class="team_photo">
+        {% for team in teams %}
+            <div class="team_body">
+                <div class="team_description">
+                    <h1>{{ team.about_me }}</h1>
+                    <p>{{ team.comment }}</p>
+                </div>
+                <div class="contain_team_photo">
+                    <img src="{{ team.photo.url }}" class="team_photo">
+                </div>
             </div>
-            <div class="team_description">
-                <h1>{{ team.0.about_me }}</h1>
-                <p>{{ team.0.comment }}</p>
-            </div>
-        </div>
-        <div class="team_body">
-            <div class="team_description">
-                <h1>{{ team.1.about_me }}</h1>
-                <p>{{ team.1.comment }}</p>
-            </div>
-            <div class="contain_team_photo">
-                <img src="{{ team.1.photo.url }}" class="team_photo">
-            </div>
-        </div>
-        <div class="team_body">
-            <div class="contain_team_photo">
-                <img src="{{ team.2.photo.url }}" class="team_photo">
-            </div>
-            <div class="team_description">
-                <h1>{{ team.2.about_me }}</h1>
-                <p>{{ team.2.comment }}</p>
-            </div>
-        </div>
-        <div class="team_body">
-            <div class="team_description">
-                <h1>{{ team.3.about_me }}</h1>
-                <p>{{ team.3.comment }}</p>
-            </div>
-            <div class="contain_team_photo">
-                <img src="{{ team.3.photo.url }}" class="team_photo">
-            </div>
-        </div>
-        <div class="team_body">
-            <div class="contain_team_photo">
-                <img src="{{ team.4.photo.url }}" class="team_photo">
-            </div>
-            <div class="team_description">
-                <h1>{{ team.4.about_me }}</h1>
-                <p>{{ team.4.comment }}</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 {% endblock %}
