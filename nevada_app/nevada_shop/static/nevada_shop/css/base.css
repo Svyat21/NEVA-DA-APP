@@ -734,6 +734,22 @@ body{
         font-size: 50px;
     }
 }
+@media (max-width:768px){
+    .rider_full_contain {
+        flex-direction: column;
+    }
+    .rider_full_right{
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
+    }
+    .rider_full_body {
+        width: 100%;
+    }
+    .rider_full_left .h1_main{
+        font-size: 64px;
+    }
+}
 
 
 /* Футер */
