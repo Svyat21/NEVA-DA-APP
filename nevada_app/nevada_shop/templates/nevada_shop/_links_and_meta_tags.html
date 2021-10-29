@@ -1,3 +1,4 @@
+{% load static %}
 <meta charset="UTF-8">
 <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -5,3 +6,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'nevada_shop/favicon_package/apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'nevada_shop/favicon_package/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'nevada_shop/favicon_package/favicon-16x16.png' %}">
+<link rel="manifest" href="{% static 'nevada_shop/favicon_package/site.webmanifest' %}">
+<link rel="mask-icon" href="{% static 'nevada_shop/favicon_package/safari-pinned-tab.svg' %}" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>{{ title_html }}</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'nevada_shop/css/base.css' %}">
