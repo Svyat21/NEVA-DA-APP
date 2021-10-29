@@ -498,7 +498,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.input-contacts{
+.input-contacts,
+.input-contacts:focus{
     border: none;
     padding: 5px;
     width: 400px;
@@ -510,6 +511,7 @@ body{
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
+    outline: none;
 }
 .form_button{
     width: 208px;
@@ -546,13 +548,25 @@ body{
     margin-bottom: 170px;
 }
 .team_body{
+    width: 100%;
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
+.team_body:nth-last-child(2n){
+    position: relative;
+    margin-top: 100px;
+    max-height: 1100px;
+}
 .contain_team_photo{
     width: 800px;
     height: 1100px;
+}
+.team_body:nth-last-child(2n)
+.contain_team_photo{
+    position: inherit;
+    top: 0px;
+    left: 0px;
 }
 .team_photo{
     width: 100%;
@@ -561,6 +575,12 @@ body{
 }
 .team_description{
     max-width: 300px;
+}
+.team_body:nth-last-child(2n)
+.team_description{
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 .team_description h1{
     font-style: normal;
