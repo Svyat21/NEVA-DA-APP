@@ -180,6 +180,77 @@ body{
         width: 60%;
     }
 }
+@media (max-width:768px){
+    .nav{
+        position: relative;
+    }
+}
+
+
+/* Бургер */
+.burger_bottom{
+    display: none;
+    position: absolute;
+    top: 26px;
+    right: 0px;
+    width: 27px;
+    height: 27px;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.burger_close{
+    top: 5px;
+    background-image: url(../images/berger_close.svg);
+}
+.burger_open{
+    margin-top: 15px;
+    height: 985px;
+    align-items: unset;
+    flex-direction: column;
+}
+.burger_contain{
+    height: 775px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.burger_body{
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.burger_body a{
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+}
+.burger_footer{
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+}
+.burger_footer div{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width:768px){
+    .mobile{
+        display: none;
+    }
+    .burger_bottom{
+        display: unset;
+    }
+}
 
 
 /* Интро */
