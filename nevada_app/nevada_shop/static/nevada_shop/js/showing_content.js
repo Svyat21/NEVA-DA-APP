@@ -29,3 +29,15 @@ if (findFullRiders.length > 0) {
         });
     }
 }
+
+let burgerBottom = document.querySelector('.burger_bottom');
+let burgerContain = document.querySelector('.burger_contain');
+let nav = document.querySelector('.nav');
+
+if (burgerBottom) {
+    burgerBottom.addEventListener('click', function () {
+        nav.classList.toggle('burger_open');
+        burgerContain.classList.toggle('invisible');
+        burgerBottom.classList.toggle('burger_close');
+    });
+}
