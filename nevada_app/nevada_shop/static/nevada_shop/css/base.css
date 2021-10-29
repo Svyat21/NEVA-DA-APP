@@ -401,6 +401,25 @@ body{
         font-size: 50px;
     }
 }
+@media (max-width:768px){
+    .about_contain {
+        border-top: unset;
+        border-bottom: unset;
+        flex-direction: column;
+    }
+    .about_left{
+        margin-bottom: 40px;
+    }
+    .about_left .h1_main{
+        font-size: 64px;
+        margin-top: 0px;
+    }
+    .about_right {
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
+    }
+}
 
 
 /* Репертуар */
@@ -916,4 +935,11 @@ body{
 
 .invisible{
     display: none;
+}
+
+@media (max-width:768px){
+    .block_content_container {
+        margin-top: 0px;
+        width: 100%;
+    }
 }
