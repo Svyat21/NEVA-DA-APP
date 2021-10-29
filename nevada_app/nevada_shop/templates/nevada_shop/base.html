@@ -12,10 +12,12 @@
         <div class="container">
             <div class="nav">
                 <a href="{% url 'home' %}"><h1 class="logo">NEVA-DA</h1></a>
-                <div class="nav_linc">
+                <div class="nav_linc mobile">
                     {% include 'nevada_shop/_nav_links.html' %}
                 </div>
-                <a class="tel" href="tel:+79052122320">+7 905 212 23 20</a>
+                <a class="tel mobile" href="tel:+79052122320">+7 905 212 23 20</a>
+                <div class="burger_bottom"></div>
+                {% include 'nevada_shop/_burger.html' %}
             </div>
         </div>
         <div class="container_center">
