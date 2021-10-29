@@ -476,6 +476,18 @@ body{
         font-weight: 300;
     }
 }
+@media (max-width:768px){
+    .repertoire_contain .h1_main{
+        font-size: 64px;
+    }
+    .repertoire_content{
+        max-height: 1600px;
+    }
+    .repertoire_content p{
+        font-size: 18px;
+        font-weight: normal;
+    }
+}
 
 
 /* Видео */
@@ -489,6 +501,11 @@ body{
 @media (max-width:1000px){
     .video_contain .h1_main {
         font-size: 50px;
+    }
+}
+@media (max-width:768px){
+    .video_contain .h1_main{
+        font-size: 64px;
     }
 }
 
@@ -540,6 +557,25 @@ body{
         font-size: 50px;
     }
 }
+@media (max-width:768px){
+    .price_contain {
+        border-top: unset;
+        border-bottom: unset;
+        flex-direction: column;
+    }
+    .price_left{
+        margin-bottom: 40px;
+    }
+    .price_left .h1_main{
+        font-size: 64px;
+        margin-top: 0px;
+    }
+    .price_right {
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
+    }
+}
 
 
 /* Райдер */
@@ -564,6 +600,9 @@ body{
 .rider_right .block_content_container{
     margin-bottom: 141px;
 }
+.rider_text{
+    max-width: 622px;
+}
 .rider_text p{
     margin-top: 20px;
 }
@@ -575,6 +614,25 @@ body{
 @media (max-width:1000px){
     .rider_left .h1_main {
         font-size: 50px;
+    }
+}
+@media (max-width:768px){
+    .rider_contain {
+        border-top: unset;
+        border-bottom: unset;
+        flex-direction: column;
+    }
+    .rider_left{
+        margin-bottom: 40px;
+    }
+    .rider_left .h1_main{
+        font-size: 64px;
+        margin-top: 200px;
+    }
+    .rider_right {
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
     }
 }
 
@@ -655,6 +713,29 @@ body{
 @media (max-width:1040px){
     .contacts_left .h1_main {
         font-size: 40px;
+    }
+}
+@media (max-width:768px){
+    .contacts_contain {
+        border-top: unset;
+        border-bottom: unset;
+        flex-direction: column;
+    }
+    .contacts_left{
+        margin-bottom: 40px;
+    }
+    .contacts_left .h1_main{
+        font-size: 64px;
+        margin-top: 200px;
+    }
+    .contacts_right {
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
+    }
+    .form_button {
+        color: #000307;
+        background-color: white;
     }
 }
 
