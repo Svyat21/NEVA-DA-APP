@@ -36,10 +36,10 @@ class HomeView(View):
 class AboutView(View):
 
     def get(self, request):
-        team = Team.objects.all()
+        teams = Team.objects.all()
         context = {
             'title_html': 'О нас',
-            'team': team,
+            'teams': teams,
         }
         return render(request, 'nevada_shop/about_team.html', context=context)
 

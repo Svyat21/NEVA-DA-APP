@@ -110,6 +110,7 @@ body{
     min-width: 100%;
 }
 .container_center{
+    position: relative;
     min-width: 100%;
     flex: 1 1 auto;
 }
@@ -177,6 +178,78 @@ body{
 @media (max-width:1000px){
     .nav_linc{
         width: 60%;
+    }
+}
+@media (max-width:768px){
+    .nav{
+        position: relative;
+    }
+}
+
+
+/* Бургер */
+.burger_bottom{
+    display: none;
+    position: absolute;
+    top: 26px;
+    right: 0px;
+    width: 27px;
+    height: 27px;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+.burger_close{
+    top: 5px;
+    background-image: url(../images/berger_close.svg);
+}
+.burger_open{
+    margin-top: 15px;
+    height: 985px;
+    align-items: unset;
+    flex-direction: column;
+}
+.burger_contain{
+    height: 775px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.burger_body{
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.burger_body a{
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+}
+.burger_footer{
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+}
+.burger_footer div{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width:768px){
+    .mobile{
+        display: none;
+    }
+    .burger_bottom{
+        display: unset;
     }
 }
 
@@ -256,6 +329,31 @@ body{
         margin-bottom: 20px;
     }
 }
+@media (max-width:768px){
+    .intro_contain{
+        position: relative;
+        margin-top: 356px;
+        height: 483px;
+    }
+    .intro_top{
+        position: absolute;
+        top: -336px;
+    }
+    .intro_top .h1_intro{
+        font-size: 64px;
+    }
+    .intro_top .p_intro{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    .buttom{
+        background-color: white;
+        color: #000307;
+    }
+    .intro_bottom {
+        display: none;
+    }
+}
 
 
 /* О нас */
@@ -301,6 +399,25 @@ body{
 @media (max-width:1000px){
     .about_left .h1_main {
         font-size: 50px;
+    }
+}
+@media (max-width:768px){
+    .about_contain {
+        border-top: unset;
+        border-bottom: unset;
+        flex-direction: column;
+    }
+    .about_left{
+        margin-bottom: 40px;
+    }
+    .about_left .h1_main{
+        font-size: 64px;
+        margin-top: 0px;
+    }
+    .about_right {
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
     }
 }
 
@@ -359,6 +476,18 @@ body{
         font-weight: 300;
     }
 }
+@media (max-width:768px){
+    .repertoire_contain .h1_main{
+        font-size: 64px;
+    }
+    .repertoire_content{
+        max-height: 1600px;
+    }
+    .repertoire_content p{
+        font-size: 18px;
+        font-weight: normal;
+    }
+}
 
 
 /* Видео */
@@ -372,6 +501,11 @@ body{
 @media (max-width:1000px){
     .video_contain .h1_main {
         font-size: 50px;
+    }
+}
+@media (max-width:768px){
+    .video_contain .h1_main{
+        font-size: 64px;
     }
 }
 
@@ -423,6 +557,25 @@ body{
         font-size: 50px;
     }
 }
+@media (max-width:768px){
+    .price_contain {
+        border-top: unset;
+        border-bottom: unset;
+        flex-direction: column;
+    }
+    .price_left{
+        margin-bottom: 40px;
+    }
+    .price_left .h1_main{
+        font-size: 64px;
+        margin-top: 0px;
+    }
+    .price_right {
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
+    }
+}
 
 
 /* Райдер */
@@ -447,6 +600,9 @@ body{
 .rider_right .block_content_container{
     margin-bottom: 141px;
 }
+.rider_text{
+    max-width: 622px;
+}
 .rider_text p{
     margin-top: 20px;
 }
@@ -458,6 +614,25 @@ body{
 @media (max-width:1000px){
     .rider_left .h1_main {
         font-size: 50px;
+    }
+}
+@media (max-width:768px){
+    .rider_contain {
+        border-top: unset;
+        border-bottom: unset;
+        flex-direction: column;
+    }
+    .rider_left{
+        margin-bottom: 40px;
+    }
+    .rider_left .h1_main{
+        font-size: 64px;
+        margin-top: 200px;
+    }
+    .rider_right {
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
     }
 }
 
@@ -498,7 +673,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.input-contacts{
+.input-contacts,
+.input-contacts:focus{
     border: none;
     padding: 5px;
     width: 400px;
@@ -510,6 +686,7 @@ body{
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
+    outline: none;
 }
 .form_button{
     width: 208px;
@@ -538,6 +715,29 @@ body{
         font-size: 40px;
     }
 }
+@media (max-width:768px){
+    .contacts_contain {
+        border-top: unset;
+        border-bottom: unset;
+        flex-direction: column;
+    }
+    .contacts_left{
+        margin-bottom: 40px;
+    }
+    .contacts_left .h1_main{
+        font-size: 64px;
+        margin-top: 200px;
+    }
+    .contacts_right {
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
+    }
+    .form_button {
+        color: #000307;
+        background-color: white;
+    }
+}
 
 
 /* Наша команда */
@@ -546,13 +746,25 @@ body{
     margin-bottom: 170px;
 }
 .team_body{
+    width: 100%;
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
+.team_body:nth-last-child(2n){
+    position: relative;
+    margin-top: 100px;
+    max-height: 1100px;
+}
 .contain_team_photo{
     width: 800px;
     height: 1100px;
+}
+.team_body:nth-last-child(2n)
+.contain_team_photo{
+    position: inherit;
+    top: 0px;
+    left: 0px;
 }
 .team_photo{
     width: 100%;
@@ -561,6 +773,12 @@ body{
 }
 .team_description{
     max-width: 300px;
+}
+.team_body:nth-last-child(2n)
+.team_description{
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 .team_description h1{
     font-style: normal;
@@ -591,6 +809,37 @@ body{
     }
     .team_description p{
         font-size: 14px;
+    }
+}
+@media (max-width:768px){
+    .team_body {
+        width: 100%;
+        flex-direction: column;
+    }
+    .contain_team_photo{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .team_body:nth-last-child(2n) {
+        max-height: unset;
+    }
+    .team_body:nth-last-child(2n)
+    .team_description{
+        position: unset;
+        top: unset;
+        right: unset;
+    }
+    .team_body:nth-last-child(2n)
+    .team_description{
+        position: unset;
+        top: unset;
+        right: unset;
+    }
+    .team_description h1{
+        font-size: 18px;
+    }
+    .team_description p{
+        font-size: 16px;
     }
 }
 
@@ -682,6 +931,22 @@ body{
         font-size: 50px;
     }
 }
+@media (max-width:768px){
+    .rider_full_contain {
+        flex-direction: column;
+    }
+    .rider_full_right{
+        width: 100%;
+        border-left: unset;
+        border-right: unset;
+    }
+    .rider_full_body {
+        width: 100%;
+    }
+    .rider_full_left .h1_main{
+        font-size: 64px;
+    }
+}
 
 
 /* Футер */
@@ -751,4 +1016,11 @@ body{
 
 .invisible{
     display: none;
+}
+
+@media (max-width:768px){
+    .block_content_container {
+        margin-top: 0px;
+        width: 100%;
+    }
 }

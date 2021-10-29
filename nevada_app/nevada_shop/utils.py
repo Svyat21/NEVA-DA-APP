@@ -10,6 +10,6 @@ def feedback_message(dict_message: dict):
         subject=f"Заказ обратной связи от пользователя {dict_message['name']}",
         message=message,
         from_email='no-reply@nevada-band.ru',
-        recipient_list=['sursvyat@gmail.com'],
+        recipient_list=['sursvyat@gmail.com', 'neva-da-band@yandex.ru'],
         fail_silently=False,
     )
