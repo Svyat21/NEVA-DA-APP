@@ -92,6 +92,19 @@ body{
 .up:hover{
     background-image: url(../images/up_after.svg);
 }
+@media (max-width:425px){
+    .more_button{
+        right: 0px;
+        width: 43px;
+        height: 43px;
+    }
+    .up {
+        right: 0px;
+        width: 43px;
+        height: 43px;
+        background-size: cover;
+    }
+}
 
 
 /* Главные контейнеры */
@@ -132,6 +145,11 @@ body{
 @media (max-width:1000px){
     .block_content_container{
         width: 93%;
+    }
+}
+@media (max-width:425px){
+    .main_wraper{
+        width: 90%;
     }
 }
 
@@ -252,6 +270,21 @@ body{
         display: unset;
     }
 }
+@media (max-width:425px){
+    .burger_open{
+        height: 600px;
+    }
+    .burger_contain{
+        height: 471px;
+    }
+    .burger_body {
+        height: 324px;
+    }
+    .burger_body a{
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
 
 
 /* Интро */
@@ -354,6 +387,27 @@ body{
         display: none;
     }
 }
+@media (max-width:425px){
+    .intro_contain{
+        margin-top: 142px;
+        height: 366px;
+    }
+    .intro_top{
+        top: -100px;
+    }
+    .intro_top .h1_intro{
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 10px;
+    }
+    .intro_top .p_intro{
+        font-size: 14px;
+        margin-bottom: 406px;
+        text-align: center;
+        line-height: 19px;
+        max-width: 250px;
+    }
+}
 
 
 /* О нас */
@@ -418,6 +472,22 @@ body{
         width: 100%;
         border-left: unset;
         border-right: unset;
+    }
+}
+@media (max-width:425px){
+    .about_contain {
+        margin-top: 185px;
+    }
+    .about_left{
+        margin-bottom: 30px;
+    }
+    .about_left .h1_main{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .about_text p {
+        font-size: 14px;
+        line-height: 19px;
     }
 }
 
@@ -488,6 +558,35 @@ body{
         font-weight: normal;
     }
 }
+@media (max-width:425px){
+    .repertoire_contain {
+        margin-top: 100px;
+    }
+    .repertoire_contain .h1_main{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .repertoire_genre {
+        min-height: 40px;
+    }
+    .repertoire_genre .p_bold{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .find_buttom {
+        width: 75%;
+    }
+    .repertoire_content {
+        grid-template-rows: repeat(auto-fit, minmax(25px, 1fr));
+    }
+    .repertoire_content p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .repertoire_body {
+        margin-top: 30px;
+    }
+}
 
 
 /* Видео */
@@ -507,6 +606,17 @@ body{
     .video_contain .h1_main{
         font-size: 64px;
     }
+}
+@media (max-width:425px){
+    .video_contain{
+        margin-top: 100px;
+    }
+    .video_contain .h1_main{
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 30px;
+    }
+    
 }
 
 
@@ -576,6 +686,29 @@ body{
         border-right: unset;
     }
 }
+@media (max-width:425px){
+    .price_contain{
+        margin-top: 100px;
+    }
+    .price_left {
+        margin-bottom: 30px;
+    }
+    .price_left .h1_main {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .price_body .h1_standart{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .price_text p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .price_right .block_content_container {
+        margin-bottom: 0px;
+    }
+}
 
 
 /* Райдер */
@@ -633,6 +766,21 @@ body{
         width: 100%;
         border-left: unset;
         border-right: unset;
+    }
+}
+@media (max-width:425px){
+    .rider_left .h1_main {
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 100px;
+    }
+    .rider_right .h1_standart{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .rider_right p{
+        font-size: 14px;
+        line-height: 19px;
     }
 }
 
@@ -738,6 +886,28 @@ body{
         background-color: white;
     }
 }
+@media (max-width:425px){
+    .contacts_left .h1_main {
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 100px;
+    }
+    .contacts_right .h1_standart{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .contacts_text p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .input-contacts{
+        width: 100%;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
 
 
 /* Наша команда */
@@ -840,6 +1010,11 @@ body{
     }
     .team_description p{
         font-size: 16px;
+    }
+}
+@media (max-width:425px){
+    .team_description {
+        width: 80%;
     }
 }
 
@@ -947,6 +1122,20 @@ body{
         font-size: 64px;
     }
 }
+@media (max-width:425px){
+    .rider_full_contain .h1_main{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .rider_full_contain .h1_standart{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .rider_full_contain p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
 
 
 /* Футер */
@@ -1008,6 +1197,16 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+@media (max-width:425px){
+    .footer {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .foter_left {
+        width: 100%;
     }
 }
 
