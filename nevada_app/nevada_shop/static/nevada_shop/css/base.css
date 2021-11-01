@@ -1219,6 +1219,14 @@ body{
     .foter_left {
         width: 100%;
     }
+    .foter_left p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .foter_left a{
+        font-size: 14px;
+        line-height: 19px;
+    }
 }
 
 
