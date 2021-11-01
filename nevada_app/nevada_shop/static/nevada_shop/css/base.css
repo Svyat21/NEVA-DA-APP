@@ -203,6 +203,11 @@ body{
         position: relative;
     }
 }
+@media (max-width:425px){
+    .nav{
+        height: 53px;
+    }
+}
 
 
 /* Бургер */
@@ -283,6 +288,12 @@ body{
     .burger_body a{
         font-size: 24px;
         line-height: 29px;
+    }
+    .burger_bottom{
+        top: 13px;
+    }
+    .burger_close {
+        top: 0px;
     }
 }
 
