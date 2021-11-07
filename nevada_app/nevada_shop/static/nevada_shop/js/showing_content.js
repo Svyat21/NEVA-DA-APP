@@ -31,13 +31,45 @@ if (findFullRiders.length > 0) {
 }
 
 let burgerBottom = document.querySelector('.burger_bottom');
-let burgerContain = document.querySelector('.burger_contain');
+let burgerFooter = document.querySelector('.burger_body');
+let burgerBody = document.querySelector('.burger_footer');
 let nav = document.querySelector('.nav');
+let burgerLinks = document.querySelectorAll('.burger_body > a')
+
+function toggleBurger() {
+    nav.classList.toggle('burger_open');
+    burgerFooter.classList.toggle('invisible');
+    burgerBody.classList.toggle('invisible');
+    burgerBottom.classList.toggle('burger_close');
+    document.body.classList.toggle('lock');
+}
 
 if (burgerBottom) {
     burgerBottom.addEventListener('click', function () {
-        nav.classList.toggle('burger_open');
-        burgerContain.classList.toggle('invisible');
-        burgerBottom.classList.toggle('burger_close');
+        toggleBurger();
     });
 }
+if (burgerLinks.length > 0) {
+    for (let i = 0; i < burgerLinks.length; i++) {
+        let el = burgerLinks[i]
+        el.addEventListener('click', function () {
+            toggleBurger();
+        })
+    }
+}
+
+// smoothScroll
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
+});

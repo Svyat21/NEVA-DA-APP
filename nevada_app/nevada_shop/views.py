@@ -11,10 +11,10 @@ import logging
 class HomeView(View):
 
     def get(self, request):
-        about = Group.objects.filter(pk=1)[0]
+        about = Group.objects.filter(pk=1).first()
         genre = Genre.objects.all().prefetch_related('repertoire_set')
-        price = Price.objects.filter(pk=1)[0]
-        rider = CommonRider.objects.filter(pk=1)[0]
+        price = Price.objects.filter(pk=1).first()
+        rider = CommonRider.objects.filter(pk=1).first()
         form = QuestionForm()
         context = {
             'title_html': 'Главная',
