@@ -92,6 +92,14 @@ body{
 .up:hover{
     background-image: url(../images/up_after.svg);
 }
+@media (max-width:768px){
+    .more_button{
+        right: 0px;
+    }
+    .up {
+        right: 0px;
+    }
+}
 @media (max-width:425px){
     .more_button{
         right: 0px;
@@ -211,6 +219,9 @@ body{
 
 
 /* Бургер */
+.lock{
+    overflow: hidden;
+}
 .burger_bottom{
     display: none;
     position: absolute;
@@ -230,7 +241,7 @@ body{
 }
 .burger_open{
     margin-top: 15px;
-    height: 985px;
+    height: 96vh;
     align-items: unset;
     flex-direction: column;
 }
@@ -257,11 +268,17 @@ body{
     line-height: 77px;
 }
 .burger_footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.burger_footer > div{
     width: 186px;
     display: flex;
     justify-content: space-between;
 }
-.burger_footer div{
+.burger_footer > div div{
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
@@ -276,9 +293,6 @@ body{
     }
 }
 @media (max-width:425px){
-    .burger_open{
-        height: 600px;
-    }
     .burger_contain{
         height: 471px;
     }
@@ -401,7 +415,7 @@ body{
 @media (max-width:425px){
     .intro_contain{
         margin-top: 142px;
-        height: 366px;
+        height: 216px;
     }
     .intro_top{
         top: -100px;
@@ -413,7 +427,7 @@ body{
     }
     .intro_top .p_intro{
         font-size: 14px;
-        margin-bottom: 406px;
+        margin-bottom: 376px;
         text-align: center;
         line-height: 19px;
         max-width: 250px;
@@ -487,7 +501,7 @@ body{
 }
 @media (max-width:425px){
     .about_contain {
-        margin-top: 185px;
+        margin-top: 340px;
     }
     .about_left{
         margin-bottom: 30px;
@@ -818,8 +832,11 @@ body{
 .contacts_right .block_content_container{
     margin-bottom: 184px;
 }
-.contacts_text p{
-    margin-top: 30px;
+.contacts_text{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 145px;
 }
 .contacts_text a{
@@ -907,6 +924,9 @@ body{
         font-size: 14px;
         line-height: 19px;
     }
+    .contacts_text{
+        height: 77px;
+    }
     .contacts_text p {
         font-size: 14px;
         line-height: 19px;
@@ -973,6 +993,9 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
+}
+.team_contain .up{
+    right: 0px;
 }
 @media (max-width:1180px){
     .contain_team_photo{
@@ -1052,7 +1075,7 @@ body{
 .rider_full_body{
     position: relative;
     max-width: 720px;
-    margin-bottom: 20px;
+    margin-bottom: 120px;
 }
 .rider_full_body .h1_standart{
     margin-top: 80px;
@@ -1128,6 +1151,7 @@ body{
     }
     .rider_full_body {
         width: 100%;
+        margin-bottom: 70px;
     }
     .rider_full_left .h1_main{
         font-size: 64px;
@@ -1145,6 +1169,10 @@ body{
     .rider_full_contain p{
         font-size: 14px;
         line-height: 19px;
+    }
+    .rider_full_body {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -1199,7 +1227,6 @@ body{
     .footer_design{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     .footer_nav{
         display: none;
@@ -1207,7 +1234,6 @@ body{
     .footer_contacts{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 }
 @media (max-width:425px){

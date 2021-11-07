@@ -31,39 +31,45 @@ if (findFullRiders.length > 0) {
 }
 
 let burgerBottom = document.querySelector('.burger_bottom');
-let burgerContain = document.querySelector('.burger_contain');
+let burgerFooter = document.querySelector('.burger_body');
+let burgerBody = document.querySelector('.burger_footer');
 let nav = document.querySelector('.nav');
+let burgerLinks = document.querySelectorAll('.burger_body > a')
+
+function toggleBurger() {
+    nav.classList.toggle('burger_open');
+    burgerFooter.classList.toggle('invisible');
+    burgerBody.classList.toggle('invisible');
+    burgerBottom.classList.toggle('burger_close');
+    document.body.classList.toggle('lock');
+}
 
 if (burgerBottom) {
     burgerBottom.addEventListener('click', function () {
-        nav.classList.toggle('burger_open');
-        burgerContain.classList.toggle('invisible');
-        burgerBottom.classList.toggle('burger_close');
+        toggleBurger();
     });
+}
+if (burgerLinks.length > 0) {
+    for (let i = 0; i < burgerLinks.length; i++) {
+        let el = burgerLinks[i]
+        el.addEventListener('click', function () {
+            toggleBurger();
+        })
+    }
 }
 
 // smoothScroll
 $(document).ready(function(){
-  // Добавить плавную прокрутку до всех ссылок
   $("a").on('click', function(event) {
-
-    // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
     if (this.hash !== "") {
-      // Запретить поведение щелчка якоря по умолчанию
       event.preventDefault();
-
-      // Хранить хэш
       var hash = this.hash;
-
-      // Использование метода animate() jQuery для добавления плавной прокрутки страницы
-      // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
 
-        // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
         window.location.hash = hash;
       });
-    } // Конец, если
+    }
   });
 });
