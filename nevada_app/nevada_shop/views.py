@@ -3,8 +3,8 @@ from django.views.generic import View
 from .models import Group, Team, Genre, Price, CommonRider, Rider
 from .forms import QuestionForm
 from .utils import feedback_message
-import logging
-
+# import logging
+#
 # logger = logging.getLogger(__name__)
 
 
