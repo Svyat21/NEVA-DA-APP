@@ -5,6 +5,9 @@ class Group(models.Model):
     photo = models.ImageField(upload_to='photos/', verbose_name='Общее фото')
     description = models.TextField(verbose_name='Общее описание коллектива')
 
+    def __str__(self):
+        return 'NevaDa band'
+
     class Meta:
         verbose_name = 'Коллектив'
         verbose_name_plural = 'Коллектив'
@@ -57,6 +60,9 @@ class Price(models.Model):
     price_not_include = models.TextField(verbose_name='В стоимость не входит')
     photo = models.ImageField(upload_to='photos/', verbose_name='Фото на главной странице')
 
+    def __str__(self):
+        return 'Настройки стоимости коллектива'
+
     class Meta:
         verbose_name = 'Цена'
         verbose_name_plural = 'Цены'
@@ -66,9 +72,12 @@ class CommonRider(models.Model):
     name = models.CharField(max_length=256, verbose_name='Титульник райдера')
     description = models.TextField(verbose_name='Общее описание райдера')
 
+    def __str__(self):
+        return 'Райдер'
+
     class Meta:
-        verbose_name = 'Райдер общий'
-        verbose_name_plural = 'Райдер общий'
+        verbose_name = 'Райдер'
+        verbose_name_plural = 'Райдер'
 
 
 class Rider(models.Model):

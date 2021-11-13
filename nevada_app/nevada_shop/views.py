@@ -3,8 +3,8 @@ from django.views.generic import View
 from .models import Group, Team, Genre, Price, CommonRider, Rider
 from .forms import QuestionForm
 from .utils import feedback_message
-import logging
-
+# import logging
+#
 # logger = logging.getLogger(__name__)
 
 
@@ -49,7 +49,7 @@ class RiderView(View):
     def get(self, request):
         rider = Rider.objects.all()
         context = {
-            'title_html': 'О нас',
+            'title_html': 'Райдер',
             'rider': rider,
         }
         return render(request, 'nevada_shop/full_rider.html', context=context)

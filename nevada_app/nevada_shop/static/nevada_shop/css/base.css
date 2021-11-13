@@ -103,6 +103,7 @@ body{
 @media (max-width:425px){
     .more_button{
         right: 0px;
+        bottom: 0px;
         width: 43px;
         height: 43px;
     }
@@ -293,6 +294,12 @@ body{
     }
 }
 @media (max-width:425px){
+    .burger_open{
+        height: 93vh;
+    }
+    .burger_footer {
+        margin-bottom: 40px;
+    }
     .burger_contain{
         height: 471px;
     }
@@ -500,6 +507,9 @@ body{
     }
 }
 @media (max-width:425px){
+    .about_right .block_content_container{
+        margin-bottom: 63px;
+    }
     .about_contain {
         margin-top: 340px;
     }
@@ -794,6 +804,9 @@ body{
     }
 }
 @media (max-width:425px){
+    .rider_right .block_content_container{
+        margin-bottom: 63px;
+    }
     .rider_left .h1_main {
         font-size: 24px;
         line-height: 29px;
