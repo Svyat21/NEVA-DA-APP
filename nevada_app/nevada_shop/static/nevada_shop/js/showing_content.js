@@ -62,7 +62,7 @@ if (burgerLinks.length > 0) {
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
-      event.preventDefault();
+      // event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top

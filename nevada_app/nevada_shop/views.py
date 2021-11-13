@@ -49,7 +49,7 @@ class RiderView(View):
     def get(self, request):
         rider = Rider.objects.all()
         context = {
-            'title_html': 'О нас',
+            'title_html': 'Райдер',
             'rider': rider,
         }
         return render(request, 'nevada_shop/full_rider.html', context=context)
