@@ -324,7 +324,7 @@ body{
 .intro_contain{
     margin-top: 104px;
     height: 576px;
-    background-image: url(../images/main_photo_last.jpg);
+    background-image: url(../images/main_photo_new.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -375,7 +375,7 @@ body{
     background-image: url(../images/vk.svg);
 }
 .insta{
-    background-image: url(../images/instagram.svg);
+    background-image: url(../images/rutube.svg);
 }
 .telegram{
     background-image: url(../images/telegram.svg);
@@ -632,6 +632,9 @@ body{
 .video_contain .h1_main{
     margin-bottom: 80px;
 }
+.video_contain div{
+    height: 541px;
+}
 @media (max-width:1000px){
     .video_contain .h1_main {
         font-size: 50px;
@@ -640,6 +643,9 @@ body{
 @media (max-width:768px){
     .video_contain .h1_main{
         font-size: 64px;
+    }
+    .video_contain div{
+        height: 450px;
     }
 }
 @media (max-width:425px){
@@ -651,7 +657,9 @@ body{
         line-height: 29px;
         margin-bottom: 30px;
     }
-    
+    .video_contain div{
+        height: 340px;
+    }
 }
 
 
