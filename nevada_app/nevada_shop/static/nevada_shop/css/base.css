@@ -9,7 +9,7 @@
 }
 a{
     text-decoration: none;
-    color: white;
+    color: #030316;
 }
 ul,
 ol,
@@ -31,8 +31,8 @@ h6{
 html,
 body{
     height: 100%;
-    background-color: #000307;
-    color: white;
+    background-color: #FFFFFF;
+    color: #030316;
     font-family: 'Open Sans', sans-serif;;
     font-style: normal;
     font-weight: normal;
@@ -68,15 +68,14 @@ body{
     bottom: 40px;
     width: 70px;
     height: 70px;
-    background-image: url(../images/details_before.svg);
+    background-image: url(../images/next.svg);
     background-repeat: no-repeat;
     background-position: center;
-    border: 2px inset white;
+    border: 2px inset #030316;
     border-radius: 50px;
-    transition: all 0.2s linear;
 }
 .more_button:hover{
-    background-image: url(../images/details_after.svg);
+    background-image: url(../images/next_hover.svg);
 }
 .up{
     position: absolute;
@@ -84,13 +83,12 @@ body{
     bottom: 40px;
     width: 70px;
     height: 70px;
-    background-image: url(../images/up_before.svg);
+    background-image: url(../images/up.svg);
     background-repeat: no-repeat;
     background-position: center;
-    transition: all 0.2s linear;
 }
 .up:hover{
-    background-image: url(../images/up_after.svg);
+    background-image: url(../images/up_hover.svg);
 }
 @media (max-width:768px){
     .more_button{
@@ -170,7 +168,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px inset white;
+    border-bottom: 1px inset #030316;
 }
 .logo{
     font: Roboto;
@@ -178,6 +176,7 @@ body{
     font-weight: 200;
     font-size: 24px;
     line-height: 28px;
+    color: #030316;
 }
 .nav_linc{
     width: 578px;
@@ -185,7 +184,7 @@ body{
     justify-content: space-between;
 }
 .nav_linc a{
-    color: white;
+    color: #030316;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -193,10 +192,10 @@ body{
     transition: all 0.2s linear;
 }
 .nav_linc a:hover{
-    color: #A0A0A0;
+    color: #6B6C77;
 }
 .tel{
-    color: white;
+    color: #030316;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -230,7 +229,7 @@ body{
     right: 0px;
     width: 27px;
     height: 27px;
-    background-image: url(../images/burger.svg);
+    background-image: url(../images/burger_black.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -238,7 +237,7 @@ body{
 }
 .burger_close{
     top: 5px;
-    background-image: url(../images/berger_close.svg);
+    background-image: url(../images/exit.svg);
 }
 .burger_open{
     margin-top: 15px;
@@ -324,7 +323,7 @@ body{
 .intro_contain{
     margin-top: 104px;
     height: 576px;
-    background-image: url(../images/main_photo_new.png);
+    background-image: url(../images/main_title_big.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -348,13 +347,13 @@ body{
 }
 .buttom{
     padding: 11px 56px;
-    border: 1px inset white;
-    color: white;
+    border: 1px inset #030316;
+    color: #030316;
     transition: all 0.2s linear;
 }
 .buttom:hover{
-    color: #000307;
-    background-color: white;
+    color: #FFFFFF;
+    background-color: #030316;
 }
 .intro_bottom{
     width: 204px;
@@ -369,16 +368,16 @@ body{
     background-position: center;
 }
 .youtube{
-    background-image: url(../images/youtubee.svg);
+    background-image: url(../images/youtube_.svg);
 }
 .vk{
-    background-image: url(../images/vk.svg);
+    background-image: url(../images/vk_black.svg);
 }
 .insta{
     background-image: url(../images/rutube.svg);
 }
 .telegram{
-    background-image: url(../images/telegram.svg);
+    background-image: url(../images/telegramm_black.png);
 }
 @media (max-width:1000px){
     .intro_contain{
@@ -392,6 +391,10 @@ body{
     }
     .intro_bottom {
         margin-bottom: 20px;
+    }
+    .buttom{
+        background-color: #030316;
+        color: white;
     }
 }
 @media (max-width:768px){
@@ -411,16 +414,13 @@ body{
         font-size: 18px;
         margin-bottom: 50px;
     }
-    .buttom{
-        background-color: white;
-        color: #000307;
-    }
     .intro_bottom {
         display: none;
     }
 }
 @media (max-width:425px){
     .intro_contain{
+        background-image: url(../images/mine_title_mini.png);
         margin-top: 142px;
         height: 216px;
     }
@@ -448,8 +448,8 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 250px;
-    border-top: 1px inset white;
-    border-bottom: 1px inset white;
+    border-top: 1px inset #030316;
+    border-bottom: 1px inset #030316;
 }
 .about_left .h1_main{
     margin-top: 80px;
@@ -457,8 +457,8 @@ body{
 .about_right{
     position: relative;
     width: 799px;
-    border-left: 1px inset white;
-    border-right: 1px inset white;
+    border-left: 1px inset #030316;
+    border-right: 1px inset #030316;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -534,10 +534,10 @@ body{
 }
 .repertoire_body{
     margin-top: 50px;
-    border-top: 1px inset white;
+    border-top: 1px inset #030316;
 }
 .repertoire_element{
-    border-bottom: 1px inset white;
+    border-bottom: 1px inset #030316;
 }
 .repertoire_genre{
     min-height: 78px;
@@ -547,7 +547,7 @@ body{
 }
 .find_buttom{
     width: 80%;
-    background-image: url(../images/find_before.svg);
+    background-image: url(../images/expand.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: center;
@@ -559,10 +559,14 @@ body{
     margin-right: 35px;
 }
 .find_buttom:hover{
-    color: #A0A0A0;
+    color: #6B6C77;
+    background-image: url(../images/expand_hover.svg);
 }
 .find_after{
-    background-image: url(../images/find_after.svg);
+    background-image: url(../images/collapse.svg);
+}
+.find_after:hover{
+    background-image: url(../images/collapse_hover.svg);
 }
 .repertoire_content{
     display: grid;
@@ -633,7 +637,7 @@ body{
     margin-bottom: 80px;
 }
 .video_contain div{
-    height: 541px;
+    height: 673px;
 }
 @media (max-width:1000px){
     .video_contain .h1_main {
@@ -669,7 +673,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 250px;
-    border-top: 1px inset white;
+    border-top: 1px inset #030316;
 }
 .price_left .h1_main{
     margin-top: 80px;
@@ -677,8 +681,8 @@ body{
 .price_right{
     position: relative;
     width: 799px;
-    border-left: 1px inset white;
-    border-right: 1px inset white;
+    border-left: 1px inset #030316;
+    border-right: 1px inset #030316;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -759,7 +763,7 @@ body{
 .rider_contain{
     display: flex;
     justify-content: space-between;
-    border-top: 1px inset white;
+    border-top: 1px inset #030316;
 }
 .rider_left .h1_main{
     margin-top: 80px;
@@ -767,8 +771,8 @@ body{
 .rider_right{
     position: relative;
     width: 799px;
-    border-left: 1px inset white;
-    border-right: 1px inset white;
+    border-left: 1px inset #030316;
+    border-right: 1px inset #030316;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -836,7 +840,7 @@ body{
 .contacts_contain{
     display: flex;
     justify-content: space-between;
-    border-top: 1px inset white;
+    border-top: 1px inset #030316;
 }
 .contacts_left .h1_main{
     margin-top: 80px;
@@ -844,8 +848,8 @@ body{
 .contacts_right{
     position: relative;
     width: 799px;
-    border-left: 1px inset white;
-    border-right: 1px inset white;
+    border-left: 1px inset #030316;
+    border-right: 1px inset #030316;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -861,7 +865,7 @@ body{
     margin-bottom: 145px;
 }
 .contacts_text a{
-    color: white;
+    color: #030316;
 }
 .contacts_form{
     margin-top: 60px;
@@ -875,9 +879,9 @@ body{
     border: none;
     padding: 5px;
     width: 400px;
-    color: white;
-    border-bottom: 1px inset white;
-    background-color: #000307;
+    color: #030316;
+    border-bottom: 1px inset #030316;
+    background-color: white;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -893,14 +897,14 @@ body{
     font-size: 18px;
     line-height: 25px;
     padding: 11px 56px;
-    border: 1px inset white;
-    color: white;
-    background-color: #000307;
+    border: 1px inset #030316;
+    color: #030316;
+    background-color: white;
     transition: all 0.2s linear;
 }
 .form_button:hover{
-    color: #000307;
-    background-color: white;
+    color: white;
+    background-color: #030316;
 }
 @media (max-width:1180px){
     .contacts_right {
@@ -931,8 +935,8 @@ body{
         border-right: unset;
     }
     .form_button {
-        color: #000307;
-        background-color: white;
+        color: white;
+        background-color: #030316;
     }
 }
 @media (max-width:425px){
@@ -1088,9 +1092,9 @@ body{
     flex-direction: column;
     align-items: center;
     width: 798px;
-    border-left: 1px inset white;
-    border-right: 1px inset white;
-    border-bottom: 1px inset white;
+    border-left: 1px inset #030316;
+    border-right: 1px inset #030316;
+    border-bottom: 1px inset #030316;
     padding-bottom: 80px;
 }
 .rider_full_body{
@@ -1108,7 +1112,7 @@ body{
     cursor: pointer;
 }
 .rider_bottom:hover{
-    color: #A0A0A0;
+    color: #6B6C77;
     text-align: end;
     text-decoration-line: underline;
 }
@@ -1133,12 +1137,12 @@ body{
     z-index: 3;
     position: absolute;
     text-decoration-line: underline;
-    color: white;
+    color: #030316;
     left: 0px;
     bottom: -42px;
 }
 .download:hover{
-    color: #A0A0A0;
+    color: #6B6C77;
 }
 .last_div{
     position: relative;
@@ -1209,7 +1213,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px inset white;
+    border-top: 1px inset #030316;
 }
 .foter_left{
     width: 914px;
@@ -1223,11 +1227,11 @@ body{
     align-items: center;
 }
 .footer_nav a{
-    color: white;
+    color: #030316;
     transition: all 0.2s linear;
 }
 .footer_nav a:hover{
-    color: #A0A0A0;
+    color: #6B6C77;
 }
 .foter_right{
     width: 186px;
