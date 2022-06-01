@@ -91,6 +91,12 @@ body{
     background-image: url(../images/up_hover.svg);
 }
 @media (max-width:768px){
+    .more_button:hover{
+        background-image: url(../images/next.svg);
+    }
+    .up:hover{
+        background-image: url(../images/up.svg);
+    }
     .more_button{
         right: 0px;
     }
@@ -209,6 +215,9 @@ body{
 @media (max-width:768px){
     .nav{
         position: relative;
+    }
+    .nav_linc a:hover{
+        color: #030316;
     }
 }
 @media (max-width:425px){
@@ -422,7 +431,7 @@ body{
     .intro_contain{
         background-image: url(../images/mine_title_mini.png);
         margin-top: 142px;
-        height: 216px;
+        height: 362px;
     }
     .intro_top{
         top: -100px;
@@ -586,6 +595,9 @@ body{
     }
 }
 @media (max-width:768px){
+    .find_buttom:hover{
+        background-image: url(../images/expand.svg);
+    }
     .repertoire_contain .h1_main{
         font-size: 64px;
     }
@@ -1131,7 +1143,7 @@ body{
     height: 100%;
     top: 0px;
     background: linear-gradient(
-0deg, #000307 9.17%, rgb(0 3 7 / 0%) 100%);
+0deg, #ffffff 9.17%, rgb(0 3 7 / 0%) 100%);
 }
 .download{
     z-index: 3;
@@ -1266,6 +1278,9 @@ body{
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
+    }
+    .footer_nav a:hover{
+        color: #030316;
     }
     .foter_left {
         width: 100%;
