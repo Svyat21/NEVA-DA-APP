@@ -408,6 +408,7 @@ body{
 }
 @media (max-width:768px){
     .intro_contain{
+        background-position: center;
         position: relative;
         margin-top: 356px;
         height: 483px;
@@ -430,6 +431,7 @@ body{
 @media (max-width:425px){
     .intro_contain{
         background-image: url(../images/mine_title_mini.png);
+        background-position: center;
         margin-top: 142px;
         height: 362px;
     }
