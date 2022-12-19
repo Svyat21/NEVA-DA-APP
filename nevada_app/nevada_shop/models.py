@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Group(models.Model):
+    main_photo = models.ImageField(upload_to='photos/', verbose_name='Фото на главной странице')
     photo = models.ImageField(upload_to='photos/', verbose_name='Общее фото')
     description = models.TextField(verbose_name='Общее описание коллектива')
 

@@ -134,3 +134,4 @@ media/
 init.sql
 certs/
 .vscode/
+.envrc
