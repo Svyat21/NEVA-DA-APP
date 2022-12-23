@@ -42,7 +42,7 @@ services:
     volumes:
       - www-html:/var/www/nevada-band.ru/html
       - ./static/:/static
-      - etc-letsencrypt:/etc/letsencrypt
+      - /etc/letsencrypt:/etc/letsencrypt
 
   # certbot:
   #   image: certbot/certbot
@@ -56,4 +56,3 @@ services:
 
 volumes:
   www-html:
-  etc-letsencrypt:
