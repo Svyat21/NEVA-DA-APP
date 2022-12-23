@@ -40,6 +40,7 @@ services:
       - postgresdb
       - nevada
     volumes:
+      - www-html:/var/www/html
       - ./static/:/static
       - etc-letsencrypt:/etc/letsencrypt
 
