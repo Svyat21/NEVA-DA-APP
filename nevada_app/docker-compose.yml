@@ -44,15 +44,15 @@ services:
       - ./static/:/static
       - etc-letsencrypt:/etc/letsencrypt
 
-  certbot:
-    image: certbot/certbot
-    depends_on:
-      - nginx
-    container_name: certbot
-    volumes:
-      - etc-letsencrypt:/etc/letsencrypt
-      - www-html:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email neva-da-band@yandex.ru --agree-tos --no-eff-email -d nevada-band.ru
+  # certbot:
+  #   image: certbot/certbot
+  #   depends_on:
+  #     - nginx
+  #   container_name: certbot
+  #   volumes:
+  #     - etc-letsencrypt:/etc/letsencrypt
+  #     - www-html:/var/www/html
+  #   command: certonly --webroot --webroot-path=/var/www/html --email neva-da-band@yandex.ru --agree-tos --no-eff-email -d nevada-band.ru
 
 volumes:
   www-html:
