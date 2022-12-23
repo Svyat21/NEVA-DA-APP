@@ -14,18 +14,18 @@ services:
     depends_on:
       - postgresdb
 
+  
   postgresdb:
-    build:
-      context: ./docker/postgres
-      dockerfile: Dockerfile
-    environment:
-      - POSTGRES_PASSWORD=svyat6009
-#    env_file:
-#      - .env
-    volumes:
-      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+    container_name: postgresdb
+    image: postgres:13
+    hostname: postgresdb
+    env_file:
+      - ./.env
     ports:
       - "5432:5432"
+    volumes:
+      - ../.postgres-data:/var/lib/postgresql/data/
+    restart: always
 
   nginx:
     build:
@@ -40,19 +40,5 @@ services:
       - postgresdb
       - nevada
     volumes:
-      - www-html:/var/www/nevada-band.ru/html
       - ./static/:/static
       - /etc/letsencrypt:/etc/letsencrypt
-
-  # certbot:
-  #   image: certbot/certbot
-  #   depends_on:
-  #     - nginx
-  #   container_name: certbot
-  #   volumes:
-  #     - etc-letsencrypt:/etc/letsencrypt
-  #     - www-html:/var/www/html
-  #   command: certonly --webroot --webroot-path=/var/www/html --email neva-da-band@yandex.ru --agree-tos --no-eff-email -d nevada-band.ru
-
-volumes:
-  www-html:
