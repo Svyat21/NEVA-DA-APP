@@ -40,7 +40,7 @@ services:
       - postgresdb
       - nevada
     volumes:
-      - www-html:/var/www/html
+      - www-html:/var/www/nevada-band.ru/html
       - ./static/:/static
       - etc-letsencrypt:/etc/letsencrypt
 
