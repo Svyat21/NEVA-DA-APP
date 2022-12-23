@@ -135,3 +135,4 @@ init.sql
 certs/
 .vscode/
 .envrc
+static

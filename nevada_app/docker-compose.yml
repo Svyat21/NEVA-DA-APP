@@ -13,7 +13,6 @@ services:
       - .:/app
     depends_on:
       - postgresdb
-
   
   postgresdb:
     container_name: postgresdb
