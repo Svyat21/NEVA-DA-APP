@@ -136,3 +136,4 @@ certs/
 .vscode/
 .envrc
 static
+00??_*.py
