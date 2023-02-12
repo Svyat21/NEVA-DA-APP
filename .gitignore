@@ -135,5 +135,5 @@ init.sql
 certs/
 .vscode/
 .envrc
-static
+nevada_app/static
 00??_*.py
